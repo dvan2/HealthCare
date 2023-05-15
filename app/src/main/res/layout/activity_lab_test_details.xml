@@ -9,7 +9,6 @@
 
 
     <TextView
-
         android:id="@+id/textViewDDName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,41 +56,64 @@
         app:layout_constraintVertical_bias="0.02" />
 
 
-    <ListView
-        android:id="@+id/LTlistView"
-        android:layout_width="347dp"
-        android:layout_height="480dp"
+    <TextView
+        android:id="@+id/LabDetailsMultiLine"
+        android:layout_width="302dp"
+        android:layout_height="361dp"
         android:layout_margin="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:text="DefaultText"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="@color/colorWhite"
+        android:editable="false"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewPackageName"
-        app:layout_constraintVertical_bias="0.366" />
+        app:layout_constraintVertical_bias="0.26" />
 
     <Button
-        android:id="@+id/LTback"
+        android:id="@+id/CLGoToCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Go To Cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LabDetailsTotalCost" />
+
+    <Button
+        android:id="@+id/CLBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CLGoToCart"
+        app:layout_constraintVertical_bias="1.0" />
 
-    <Button
-        android:id="@+id/LTcart"
+    <TextView
+        android:id="@+id/LabDetailsTotalCost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Go To Cart"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Default Text"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/yellowLight"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/CLGoToCart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.099"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LabDetailsMultiLine" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -92,10 +92,4 @@
         android:textColor="@color/purple"
         android:layout_marginBottom="20dp"/>
 
-    
-
-
-
-
-
 </LinearLayout>

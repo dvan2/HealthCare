@@ -31,7 +31,6 @@ public class LoginActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*
                 String username = edUsername.getText().toString();
                 String password = edPassword.getText().toString();
                 Database db = new Database(getApplicationContext(), "healthcare", null, 1);
@@ -41,8 +40,6 @@ public class LoginActivity extends AppCompatActivity {
                 }
                 else {
                     if(db.login(username,password)) {
-                        //user: vanvan
-                        //password: vanvan@1234
                         Toast.makeText(getApplicationContext(), "Login Success", Toast.LENGTH_SHORT).show();
                         SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
                         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -54,9 +51,6 @@ public class LoginActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Incorrect Username and Password", Toast.LENGTH_SHORT).show();
                     }
                 }
-
-                 */
-                startActivity(new Intent(LoginActivity.this, HomeActivity.class));
             }
         });
 
